@@ -1,0 +1,27 @@
+--- 
+apiVersion: apps/v1
+containers: 
+  - 
+    name: react
+image: ajaykumar426344/react
+imagePullPolicy: IfNotPresent
+io.kompose.service: react
+kind: Deployment
+labels: ~
+matchLabels: ~
+maxSurge: 25%
+metadata: ~
+mixUnavailable: 25%
+name: react
+ports: 
+  ? "• containerPort"
+  : 3000
+replicas: 1
+restartPolicy: Always
+rollingUpdate: ~
+selector: ~
+spec: ~
+strategy: ~
+template: ~
+type: RollingUpdate
+
